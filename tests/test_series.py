@@ -7,14 +7,8 @@ def test_version():
 
 
 def test_fibonacci():
-    expected = 3
-    actual = fibonacci(4)
-    assert actual == expected
-
-
-def test_fibonacci2():
-    expected = 8
-    actual = fibonacci(6)
+    expected = 5
+    actual = fibonacci(5)
     assert actual == expected
 
 
@@ -25,12 +19,6 @@ def test_fibonacci3():
 def test_lucas():
     expected = 4
     actual = lucas(3)
-    assert actual == expected
-
-
-def test_lucas2():
-    expected = 11
-    actual = lucas(5)
     assert actual == expected
 
 
