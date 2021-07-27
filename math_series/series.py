@@ -22,9 +22,13 @@ def lucas(n):
 
 def sum_series(n, f=0, s=1):
 
-    if f == 2 and s == 1:
-        return lucas(n)
-    elif f == 0 and s == 1:
-        return fibonacci(n)
+    if n == 0:
+        return f
+    elif n == 1:
+        return s
     else:
-        return fibonacci(n) + lucas(f)
+        return sum_series(n - 1, f, s) + sum_series(n - 2, f, s)
+
+
+print(sum_series(4, 5, 6))
+# 5,6,11,17,28
