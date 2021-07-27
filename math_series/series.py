@@ -30,4 +30,4 @@ def sum_series(n, f=0, s=1):
         return sum_series(n - 1, f, s) + sum_series(n - 2, f, s)
 
 
-print(sum_series(6, 4, 5))
+print(sum_series(3, 1, 2))

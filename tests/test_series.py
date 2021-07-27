@@ -33,7 +33,7 @@ def test_sum_series():
 
 
 def test_sum_series2():
-    expected = 17
+    expected = 115
     actual = sum_series(7, 3, 7)
     assert actual == expected
 
